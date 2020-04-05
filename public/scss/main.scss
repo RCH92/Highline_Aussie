@@ -1,0 +1,344 @@
+@charset 'utf-8';
+
+@import 'settings';
+@import 'foundation';
+@import 'motion-ui';
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  #mainContainer {
+    background-color: #7088B5;
+    display: flex;
+    justify-content: center;
+    height: auto;
+    width: 100vw;
+    min-height: 100vh;
+    
+}
+#contentBox{
+    background: whitesmoke;
+    // height:100vh;
+    width: 1200px;
+    box-shadow: 0px 0px 20px #141414;
+    margin: 50px 0px 50px 0px;
+    height: fit-content;
+}
+h1{
+    font-family: 'Great Vibes', cursive;
+}
+.bannerText{
+    display: flex;
+    justify-content: center;
+    color:#7088b5;
+    h1{
+        margin: 25px 0px;
+        font-size: 8rem !important;
+    }
+}
+#homeImg, #aboutImage, #contactImage{
+    display: flex;
+    justify-content: center;
+}
+#bannerImg{
+    img{
+        max-width: 100%;
+        width: 1200px;
+        height: 410px;
+    }
+    // display: flex;
+    // max-width: 100%;
+    // max-height: 30vh;
+    // height: 30vh;
+    // background-image: url(../Images/Alli_Banner.jpg);
+    // background-repeat: no-repeat;
+    // background-size: cover;
+    // // background-size: inherit;
+}
+#homeBio, #aboutUsText, .mainStyle{
+    p{
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 220%;
+        display: block;
+        margin: 48px 160px;
+        text-align: justify;
+        color: #626569;
+    }
+}
+.sticky {
+    position: fixed;
+    top: 0;
+    width: inherit;
+  }
+#navList{
+    display: flex;
+    justify-content: space-around;
+    height: auto;
+    padding: 5px;
+    text-align: center;
+    background: #869bbc;
+    list-style: none;
+    margin: 0;
+    z-index: 10000;
+   
+    
+
+    .divideLine{
+        width: 1px;
+        height: 50%;
+        background: whitesmoke;
+        margin: auto;
+    }
+    li{
+        text-align: center;
+        background: #869bbc;
+        a{
+            color: whitesmoke;
+            font-family: 'EB Garamond', serif;
+        }
+        a:hover{
+        cursor:  url("/public/public/images/pawinv.png")0 0, auto;
+        
+        
+        }
+    }
+    
+}
+.dropMenu{
+    .menu{
+        a{
+            margin: auto;
+        }
+        li:not(:last-child) {
+            border-bottom: solid 1px ghostwhite;
+        
+        
+        }
+    }
+}
+#contactWrapper{
+    display: flex;
+    justify-content: center;
+    margin-top: 60px;
+
+    .contact{
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+        margin: auto;
+        
+        .name{
+            p{
+                font-weight: bold;
+            }
+        }
+        p{
+            line-height: 100%;
+            margin: 2px 0px;
+            text-align: center;
+            font-size: 14px;
+            color: #7088b5;
+            a{
+                font-size: 14px;
+            }
+        }
+    }
+}
+.copyright{
+    text-align: center;
+    margin: 30px 0px 10px 0px;
+    p{
+        font-size: 10px;
+    }
+}
+
+//our dogs
+
+.dogBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    // align-items: center;
+
+    .dogDiv{
+        display: flex;
+        flex-direction: column;
+        width:400px;
+        height: auto;
+        image-rendering: crisp-edges;
+        margin: 5px;
+        img{
+            width: 400px;
+            height: 320px;
+            margin: 0px auto;
+        }
+        img:hover{
+            cursor: pointer;
+        }
+        h3{
+            font-size: 15px;
+            text-align: center;
+        }
+    }
+}
+.todo{
+    text-align: center;
+}
+
+.soloDogPage{
+
+
+    .dogMainImg{
+        display: flex;
+        justify-content: center;
+        img{
+            width: 60%;
+        }
+    }
+    .dogTitle{
+        h3{
+            font-size: 21px;
+            text-align: center;
+        }
+    }
+    .sireDamDiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+
+        .sireDamElement{
+            width: 30%;
+            text-align: center;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        
+    }
+    .dogText{
+        h3, h4{
+            font-family: 'Open Sans', sans-serif;
+            font-size: 16px;
+            line-height: 220%;
+            display: block;
+            margin: 48px 160px;
+            text-align: justify;
+            color: #626569; 
+        }
+        h1{
+            text-align: center;
+            font-size: 50px;
+            color:#7088b5;
+        }
+        h4{
+            text-align: center;
+            margin-top: 0;
+            padding-top: 0;
+        }
+        
+    }
+    .lineTop{
+        border-top:1px rgb(85, 85, 85)  solid ;
+        h1{
+            padding-top: 60px;
+        }
+    }
+    .dogText2{
+        padding-top: 60px;
+    }
+    .offspringBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        margin-top: 20px;
+        
+        .offspringElement{
+            display: flex;
+            justify-content: space-evenly;
+        }
+        
+        .offspringSire{
+            width: 30%;
+            text-align: center;
+            // color: red;
+            margin:0px;
+            h1{
+                font-size: 35px;
+                color:#7088b5;
+            }
+            h3{
+                font-size: 17px;
+                margin: auto;
+                text-align: center;
+            }
+            h4{
+                font-size: 14px;
+            }
+        }
+        .offspring{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            margin-top: 20px;
+            .pupper{
+                width: 27%;
+                h3{
+                    font-size: 12px;
+                    margin: auto;
+                    text-align: center;
+                }
+                
+                img{
+                    
+                }
+            }
+        }
+    }
+    
+}
+.lineBottom{
+    
+    width: 40%;
+    height: 1px;
+    padding-bottom: 40px;
+    border-bottom:1px #7088b5 solid;
+    margin: auto;
+}
+#offSpringFlex{
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0px;
+        #offspringLine{
+            width: 40%;
+            border-bottom:1px #7088b5 solid;
+            h1{
+                margin: 0px;
+            }
+        }
+    }
+//info
+
+.links{
+    display: flex;
+    justify-content: center;
+    
+    p{
+        text-align: center;
+    }
+}
+
+//gallery
+
+.orbit{
+    margin: 30px;
+
+}
